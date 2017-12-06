@@ -1,7 +1,18 @@
 import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+
+import Header from "./Header";
+import Landing from "./Landing";
+import Footer from "./Footer";
 
 const App = () => {
-  return <div>Hi There!</div>;
+  return (
+    <div>
+      <Header />
+      <Landing />
+      <Footer />
+    </div>
+  );
 };
 
 export default App;
