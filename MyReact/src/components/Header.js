@@ -37,13 +37,7 @@ class Header extends Component {
               <a style={{ textDecoration: "none" }}>Register</a>
             </li>
             <li>
-              <a style={{ textDecoration: "none" }}>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-                  height="30"
-                />{" "}
-                Login with Google
-              </a>
+              <a style={{ textDecoration: "none" }}> Login with Google</a>
             </li>
           </ul>
         </div>

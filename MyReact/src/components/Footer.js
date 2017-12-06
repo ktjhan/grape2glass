@@ -53,7 +53,7 @@ class Footer extends Component {
         <div className="footer-copyright">
           <div className="container-fluid">
             <p class="text-center"> Home | About Us | Contact </p>
-            © 2016 Copyright:{" "}
+            © 2017 Copyright:{" "}
             <a href="http://www.Grape2Glass.us"> Grape2Glass.us </a>
           </div>
         </div>
