@@ -11,6 +11,12 @@ export default function() {
       profile: { sweetness: 4, acidity: 2, alcohol: 5, body: 4 },
       aroma: ["Cherry", "Fig", "Toasted Marshmallow", "Marzipan"],
       pairing: ["Mozzarella", "Garlic", "Salmon", "Veal"]
+    },
+    {
+      name: "Saint Lauren 2014",
+      profile: { sweetness: 5, acidity: 4, alcohol: 3, body: 3 },
+      aroma: ["Juniper Cherry", "Blackberry", "Blueberry", "Soft Spices"],
+      pairing: ["Gruyère Cheese", "Fried Chicken", "Lean & Grass-Fed Beef"]
     }
   ];
 }
