@@ -1,7 +1,9 @@
 import { combineReducers } from "redux";
 
+import WheelButtonsReducer from "./reducer_wheelbuttons";
+
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  wheelbuttons: WheelButtonsReducer
 });
 
 export default rootReducer;

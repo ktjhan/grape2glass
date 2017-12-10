@@ -5,15 +5,17 @@ class WheelButtonList extends Component {
   renderList() {
     return this.props.wheelbuttons.map(wheelbutton => {
       return (
-        <button key={wheelbutton.name} type="button" class="btn btn-primary">
-          Wheel button test
-        </button>
+        <li key={wheelbutton.name}>
+          <button key={wheelbutton.name} type="button" class="btn btn-primary">
+            {wheelbutton.name}
+          </button>
+        </li>
       );
     });
   }
 
   render() {
-    return <ul className="list-group col-sm-4">{renderList()}</ul>;
+    return <ul className="list-group col-sm-4">{this.renderList()}</ul>;
   }
 }
 
@@ -24,3 +26,4 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(WheelButtonList);
+
