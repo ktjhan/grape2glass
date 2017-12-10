@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import WheelButtonList from "./WheelButtonList";
+import WheelButtonList from "../containers/wheel-button-list.js";
+import WheelButtonDetail from "../containers/wheel-button-detail.js";
 
 class Landing extends Component {
   render() {
@@ -11,6 +12,7 @@ class Landing extends Component {
           height="100%"
           width="100%"
         />*/}
+        <WheelButtonDetail />
         <WheelButtonList />
       </div>
     );

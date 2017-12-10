@@ -20,7 +20,7 @@ class Header extends Component {
               <img src="../../public/images/magnifying_glass.png" height="30" />
             </li>
             <li>
-              <input type="text" class="mat-input" size="10" />
+              <input type="text" className="mat-input" size="10" />
             </li>
           </ul>
           <a className="center brand-logo">
