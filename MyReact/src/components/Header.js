@@ -31,7 +31,7 @@ class Header extends Component {
           </a>
           <ul className="right">
             <li>
-              <a style={{ textDecoration: "none" }}>Sign in</a>
+              <a style={{ textDecoration: "none" }}>Sign In</a>
             </li>
             <li>
               <a style={{ textDecoration: "none" }}>Register</a>
@@ -49,11 +49,11 @@ class Header extends Component {
 var options = [
   {
     description: "En",
-    code: "a"
+    code:  "Hardcode it in English"
   },
   {
     description: "Fr",
-    code: "b"
+    code: "Hardcode it in French or use Google Translate API"
   }
 ];
 
