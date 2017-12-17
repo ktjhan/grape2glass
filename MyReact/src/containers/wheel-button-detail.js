@@ -10,9 +10,8 @@ class WheelButtonDetail extends Component {
       <div
         className="center-align"
         style={{
-          display: "inline-block",
-          height: "300px",
-          width: "100px",
+          height: "600px",
+          width: "200px",
           backgroundColor: "white"
         }}
       >
