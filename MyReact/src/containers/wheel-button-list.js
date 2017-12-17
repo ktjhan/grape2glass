@@ -33,7 +33,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ selectWheelButton: selectWheelButton }, dispatch);
+  return bindActionCreators({ selectWheelButton }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(WheelButtonList);
