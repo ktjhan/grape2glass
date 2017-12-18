@@ -49,7 +49,7 @@ class Header extends Component {
 var options = [
   {
     description: "En",
-    code:  "Hardcode it in English"
+    code: "Hardcode it in English"
   },
   {
     description: "Fr",

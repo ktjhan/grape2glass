@@ -5,7 +5,7 @@ class Footer extends Component {
     return (
       <footer className="page-footer center pt-0 black">
         <div className="footer-copyright">
-          <div className="container-fluid">
+          <div className="container">
             <p className="text-center"> Home | About Us | Contact </p>
             © 2017 Copyright:{" "}
             <a href="http://www.Grape2Glass.us"> Grape2Glass.us </a>

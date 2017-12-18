@@ -3,7 +3,7 @@ export default function(state, action) {
     {
       selection: "My Mood",
       items: [
-        { text: "Smile & Celebrate", caption: "Smile & celebrate", image: "" },
+        { text: "Yummy", caption: "Smile & celebrate", image: "" },
         { text: "WOW!", caption: "Enjoy the show!", image: "" },
         { text: "Mmmh...", caption: "Relax & meditate", image: "" }
       ]

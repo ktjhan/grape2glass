@@ -18,14 +18,7 @@ class WheelButtonDetail extends Component {
       return this.getItemsList().map(item => {
         return (
           <li key={item.text}>
-            <button
-              key={item.text}
-              type="button"
-              className="btn btn-primary"
-              data-toggle="button"
-              aria-pressed="false"
-              autoComplete="off"
-            >
+            <button key={item.text} type="button" className="btn btn-primary">
               {item.text}
             </button>
           </li>
@@ -35,14 +28,22 @@ class WheelButtonDetail extends Component {
   }
   render() {
     if (!this.props.activewheelbutton) {
-      return <div>Please select a wheel button.</div>;
+      return (
+        <div
+          className="col-lg-3 col-centered"
+          style={{
+            backgroundColor: "#F5F5F5"
+          }}
+        >
+          Please select a wheel button
+        </div>
+      );
     }
     return (
       <div
+        className="col-lg-3 col-centered"
         style={{
-          height: "600px",
-          width: "200px",
-          backgroundColor: "white"
+          backgroundColor: "#F5F5F5"
         }}
       >
         <div>{this.props.activewheelbutton.name}</div>

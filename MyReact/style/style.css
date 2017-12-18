@@ -10,3 +10,8 @@ select.form-control {
   height: 50%;
   width: 80%;
 }
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}

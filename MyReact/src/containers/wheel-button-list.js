@@ -22,7 +22,7 @@ class WheelButtonList extends Component {
   }
 
   render() {
-    return <ul className="list-group col-sm-4">{this.renderList()}</ul>;
+    return <ul className="col-md-2">{this.renderList()}</ul>;
   }
 }
 
