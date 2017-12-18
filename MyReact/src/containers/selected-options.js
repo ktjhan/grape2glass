@@ -28,7 +28,7 @@ class SelectedOptionsWindow extends Component {
   }
 
   render() {
-    if (!this.props.selectedoptions) {
+    if (!this.props.selectedoptions || !this.props.selectedoptions.length) {
       return <div>Please select at least one option.</div>;
     }
     return (
