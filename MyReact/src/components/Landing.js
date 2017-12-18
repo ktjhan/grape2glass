@@ -8,8 +8,9 @@ class Landing extends Component {
       <div
         style={{
           height: "",
+          width: "100%",
           backgroundColor: "#efefef",
-          display: "block",
+          display: "flex",
           overflow: "auto"
         }}
       >
