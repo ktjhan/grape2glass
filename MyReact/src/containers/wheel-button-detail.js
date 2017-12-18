@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import { addOption } from "../actions/index.js";
 
 class WheelButtonDetail extends Component {
   getItemsList() {
@@ -18,7 +20,11 @@ class WheelButtonDetail extends Component {
       return this.getItemsList().map(item => {
         return (
           <li key={item.text}>
-            <button key={item.text} type="button" className="btn btn-primary">
+            <button
+              onClick={() => this.props.addOption(item)}
+              type="button"
+              className="btn btn-primary"
+            >
               {item.text}
             </button>
           </li>
@@ -30,7 +36,7 @@ class WheelButtonDetail extends Component {
     if (!this.props.activewheelbutton) {
       return (
         <div
-          className="col-lg-3 col-md-offset-3"
+          className="col-lg-3 col-md-offset-2"
           style={{
             backgroundColor: "#F5F5F5"
           }}
@@ -41,7 +47,7 @@ class WheelButtonDetail extends Component {
     }
     return (
       <div
-        className="col-lg-3 col-md-offset-3"
+        className="col-lg-3 col-md-offset-2"
         style={{
           backgroundColor: "#F5F5F5"
         }}
@@ -60,4 +66,8 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(WheelButtonDetail);
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ addOption }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(WheelButtonDetail);

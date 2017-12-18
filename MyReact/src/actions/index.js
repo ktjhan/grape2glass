@@ -4,3 +4,17 @@ export function selectWheelButton(button) {
     payload: button
   };
 }
+
+export function addOption(option) {
+  return {
+    type: "ADD_OPTION",
+    payload: option
+  };
+}
+
+export function removeOption(option) {
+  return {
+    type: "REMOVE_OPTION",
+    payload: option
+  };
+}
