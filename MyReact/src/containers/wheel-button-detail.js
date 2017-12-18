@@ -36,7 +36,7 @@ class WheelButtonDetail extends Component {
     if (!this.props.activewheelbutton) {
       return (
         <div
-          className="col-lg-3 col-md-offset-2"
+          className="col-lg-3 col-md-offset-1"
           style={{
             backgroundColor: "#F5F5F5"
           }}
@@ -47,7 +47,7 @@ class WheelButtonDetail extends Component {
     }
     return (
       <div
-        className="col-lg-3 col-md-offset-2"
+        className="col-lg-3 col-md-offset-1"
         style={{
           backgroundColor: "#F5F5F5"
         }}
