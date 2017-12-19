@@ -11,7 +11,6 @@ class SelectedOptionsWindow extends Component {
           <button
             onClick={() => {
               this.props.removeOption(text);
-              this.forceUpdate();
             }}
             key={text}
             type="button"
