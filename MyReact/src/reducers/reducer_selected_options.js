@@ -10,7 +10,7 @@ export default function(state = null, action) {
       break;
     case "REMOVE_OPTION":
       const index = state.indexOf(action.payload.text);
-      const array = state.slice(0);
+      const array = [...state];
       array.splice(index, 1);
       return array;
       break;
